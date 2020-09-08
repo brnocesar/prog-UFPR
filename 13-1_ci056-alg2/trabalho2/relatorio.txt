@@ -1,0 +1,48 @@
+Algoritmos e Estruturas de Dados 2 – Trabalho 2 – 2013/1
+
+=> Informações sobre a biblioteca
+- Definição de tipos de dados:
+    - Objeto, contendo as seguintes informações:
+        - Modelo de carro;
+        - Carroceria;
+        - Tempo em que foi efetuado o pedido;
+        - Tempo que demora a montagem;
+        - Tempo de atraso de determinado processo;
+        - Tempo em que se iniciou dado processo.
+    - Nó, contendo as seguintes informações:
+    - Objeto;
+    - Antecessor;
+        - Sucessor.
+    - Header, contendo as seguintes informações:
+    - Primeiro;
+    - Ultimo;
+    - Tamanho.
+- Listas e funções:
+    - Lista, com tamanho inicial igual a 0 e ponteiro para primeiro e últimos elementos iguais a NULL.
+    - Função para ler o arquivo e carregar o conteúdo de cada linha para um elemento em uma dada lista.
+    - Função para escrever a ação que está ocorrendo no arquivo de saída.
+    - Função para inserir um dado em uma lista, inserindo o elemento desejado:
+        - No primeiro nó da lista, caso ainda não haja nenhum nó na lista, aumentando o tamanho da lista em uma unidade;
+        - Nó seguinte ao último da lista, aumentando também o tamanho da lista
+        em uma unidade.
+    - Função para destruir uma lista, que libera todos os elementos de uma dada lista e depois a própria lista.
+    - Função para inserir um nó, inserindo-o:
+        - No início da lista, realocando os elementos seguintes e aumentando o tamanho da lista em uma unidade;
+        - No final da lista, fazendo com que o último elemento aponte para ele e aumentando também o tamanho da lista em uma unidade.
+    - Função para remover um nó de uma dada lista, realocando os ponteiros do elemento anterior e do seguinte.
+    - Função para destruir um nó, removendo o seu conteúdo e por último, liberando-o da memória.
+
+=> Informações sobre o programa
+Feita a declaração das variáveis globais, ocorre a declaração das funções a serem utilizadas durante o programa. Após isso, inicia-se o programa.
+Dentro do main, ocorre a declaração dos nós e filas que serão utilizados. Dentro do while, ocorrem as seguintes ações:
+- Atualiza o tempo, a fila de pedidos, o número de carros que terminaram na linha de montagem e verifica também se algum carro já terminou na pintura.
+    - Caso ocorra alguma das seguintes ações, atualizam-se as informações do item 1 e segue-se o fluxo novamente desde o início. Ou seja, são excludentes entre si, pois só pode haver uma ação por “ tempo “.
+1. Se houver espaço na pintura, escolhe-se preferencialmente um carro saindo da linha de montagem para ir para a pintura, pois poupa-se uma transferência extra do carro para o pátio e em seguida para a linha a linha de montagem. Caso não haja, move-se um carro do pátio para a pintura, dando assim, preferência durante todo o processo para o envio de carros para a pintura, ponto de maior afunilamento.
+2. Caso haja algum carro que tenha terminado de montar, move-se o carro para o pátio.
+3. Em seguida, verifica-se se há algum pedido para ocorrer no tempo corrente e se há espaço na linha de montagem. Caso haja, é realizado o pedido para a linha de montagem.
+
+Em cada uma das ações, a preferência por qual carro sofre a ação ocorre da seguinte maneira:
+    - Carro com maior tempo de atraso ( maior que 10 ‘tempos’ );
+    - Em caso de empate, opta-se por carros OXX;
+    - Caso ainda haja empate, escolhe-se o primeiro, com caráter aleatório.
+Ao final de cada ação, é impresso no arquivo de saída a ação ocorrida e o tempo em que ela ocorreu;

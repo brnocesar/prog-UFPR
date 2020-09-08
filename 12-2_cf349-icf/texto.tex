@@ -1,0 +1,91 @@
+\documentclass[twocolumn,10pt]{article}
+\usepackage[utf8]{inputenc}
+\baselineskip 12pt % espaço entre as linhas do texto
+\parindent=0pt % identaçao do paragrafo
+\parskip=4pt plus 2pt minus 2pt % espaço de separaçao vertical entre os paragrafos
+%\columnsep 1.5pt % espaçamento entre as colunas
+\usepackage{graphicx}
+\usepackage{bm}
+
+\begin{document}
+\twocolumn[ %
+\title{Teste de Artigo Acadêmico}
+\author{Bruno Cesar dos Santos}
+\date{4 de março de 2013}
+\maketitle{}
+\begin{abstract} % espaço destinado ao resumo
+Este é o resumo do teste de artigo academico usando o \LaTeX\. Atividade feita para a disciplina de instrumentacao computacional do curso de bacharelado em fisica da Universidade Federal do Paraná.
+\end{abstract}
+\vskip 10pt % espaço vertical
+]%
+%
+\LaTeX\
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{imagens/gnu.eps}
+  \caption{fugura do google}
+\end{figure}
+%
+Como um conjunto de macros para o TeX, o sistema LaTeX fornece ao usuário um conjunto de comandos de alto nivel, sendo, dessa forma, mais fácil a sua utilização por pessoas nos primeiros estágios de utilização desse sistema. Possui abstrações para lidar com bibliografias, citações, formatos de páginas, referência cruzada e tudo mais que não seja relacionado ao conteúdo do documento em si.
+%
+\begin{equation}
+  x = x_0+v \Delta t
+\end{equation}
+%
+O LaTeX é um conjuto de macros criadas para o TeX, sendo continuamente aprimorado, especialmente através da criação de novos pacotes. De fato, qualquer pessoa com conhecimento suficiente da linguagem pode criar novas funcionalidades para o sistema, e disponibilizá-las na Internet para pessoas que precisem da função em questão, não existente previamente. Dessa forma, muitas necessidades locais que surgem no decorrer do tempo, dependendo da sua natureza, podem ser solucionadas através de um novo pacote, permanecendo o núcleo do sistema LaTeX inalterado, liberando os desenvolvedores para focarem seus esforços em realmente melhorar o programa, e não solucionar diferenças regionais.
+%
+\begin{equation}
+  \label{eq:pitagoras}
+  a_i^2 = b_i^2 + c_i^2
+\end{equation}
+%
+Os estilos tipográficos são suportados através de pacotes que fornecem classes específicas. Já que os documentos preparados no LaTeX possuem estruturação apenas lógica, são necessárias classes que transformem em documento formatado as exigências de instituições como a ABNT e a APA, a Associação Americana de Psicologia.
+%
+\begin{equation}
+  \label{eq:bernoulli}
+  z = \frac{x^2}{y^3}
+\end{equation}
+%
+A necessidade de modelos prontos constitui uma desvantagem do sistema LaTeX, pois a compreensão dos comandos de formatação é bem mais difícil do que, por exemplo, a sistemática adotada por uma ferramente WYSIWYG, o que ressalta a diferença de foco entre os dois sistemas. Entretanto, tal situação é amenizada pela disponibilidade de pacotes no site da CTAN.
+%
+\begin{equation}
+  \label{eq:raiz}
+  g = \sqrt{\frac{\gamma - 1}{\beta + (x+1)^3}}
+\end{equation}
+%
+O LaTeX é um conjuto de macros criadas para o TeX, sendo continuamente aprimorado, especialmente através da criação de novos pacotes. De fato, qualquer pessoa com conhecimento suficiente da linguagem pode criar novas funcionalidades para o sistema, e disponibilizá-las na Internet para pessoas que precisem da função em questão, não existente previamente. Dessa forma, muitas necessidades locais que surgem no decorrer do tempo, dependendo da sua natureza, podem ser solucionadas através de um novo pacote, permanecendo o núcleo do sistema LaTeX inalterado, liberando os desenvolvedores para focarem seus esforços em realmente melhorar o programa, e não solucionar diferenças regionais.
+%
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth,height=0.5\linewidth]{imagens/tux_1.eps}
+  \caption{fugura do google}
+\end{figure}
+%
+Os muitos pacotes criados para o LaTeX são essenciais para que os usuários do sistema tenham maior liberdade na criação dos documentos. Muitos pacotes nem sempre adicionam novas funcionalidades, mas modificam o tratamento padrão dado a certas funções, criando mais diversidade de apresentação visual para o universo dos documentos produzidos em LaTeX. Pacotes podem ser obtidos através da CTAN.
+%
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth,height=\linewidth]{imagens/tux_2.eps}
+  \caption{fugura do google} % em geral, a legenda de figuras fica em baixo da figura
+\label{fig:teste_1} % colocando manualmente o numero da figura
+\end{figure}
+%
+Os documentos escritos para o LaTeX estão em texto simples, sem qualquer formatação. Nesse sentido, é possível escrever documentos para o LaTeX em qualquer editor de texto, mesmo nos mais simples graficamente, como o Vi ou o Bloco de notas. Não obstante essa facilidade de edição de arquivos LaTeX, recomenda-se a utilização de programas específicos, muitos deles sendo software livre, como o Kile. Além disso, o LaTeX funciona em diversas plataformas, existindo distribuições para muitos sistemas operacionais, a exemplo de MiKTeX, para Windows; MacTeX, para Mac OS X; e TeX Live (multiplataforma, incluindo Linux).
+%
+\begin{table}[t] % [t] topo de pagina, [p] pagina integral, [b] fundo de pagina, [t] no meio da pagina
+\caption{teste de tabela} % em geral, a legenda de tabelas ficam na parte de cima, vindo antes da tabela
+\label{tab:teste_2} % colocando manualmente o numero da tabela
+\begin{tabular}{c|c}
+ t & x \\ \hline
+ 0 & 1 \\
+ 1 & 2 \\
+\end{tabular}
+\includegraphics{} % caminho da figura
+\end{table}
+%
+criação de um sistema tipográfico de qualidade, evidentemente, deve possibilitar ao usuário a escolha de ao menos uma fonte que suporte as qualidades do sistema em questão. Com esse propósito, a família de fontes Computer Modern, desenvolvida pelo criador do TeX, Donald Knuth, se tornou o padrão do sistema. para escrevermos um i chapéu, fazemos $\hat{i}$ ou $\hat{\imath}$.
+Para representarmos media aritmetica, $\bar{v}$. E para o vetor em negrito $\vec{\bm{F}}$.
+
+A impossibilidade do TeX utilizar o novo padrão de fontes, OpenType, conduziu ao desenvolvimento da ferramenta XeTeX, cuja variante para o LaTeX pode ser acessada através do XeLaTeX. Ao tempo de edição desse texto, o XeTeX está disponível para muitas plataformas, incluindo Mac OS X, Linux e Windows. Uma das distribuições mais populares para Windows, MiKTeX possui suporte a XeTeX em sua versão 2.7, disponível para o público desde dezembro de 2007. a posicao $x$ da particula é $x=3$~m.
+
+\end{document}

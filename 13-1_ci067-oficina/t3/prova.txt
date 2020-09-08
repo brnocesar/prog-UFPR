@@ -1,0 +1,28 @@
+# Denominados por som a qualquer vibração mecânica que seja capaz de impressionar o ouvido humano. Ainda com relação ao som relacione as corretas:
+#
+{As freqüências superiores a 20 000hz são chamadas ultra-sons.|V}
+{A velocidade do som nos sólidos é maior que a velocidade do som nos gases.|V}
+{A velocidade do som aumenta em média 0,6m/s para cada 1°C de acréscimo na temperatura.|V}
+{A intensidade sonora é a qualidade que permite distinguir um som grave de um som agudo.|F}
+{A altura permite distinguir os sons fortes e fracos.|F}
+{O eco á um fenômeno da reflexão sonora.|V}
+{O som agudo é aquele de pequena freqüência.|F}
+@
+
+# Em um forno de microondas são produzidas ondas com freqüência de 2,5 GHz e de natureza eletromagnética, as quais são absorvidas por ressonância pelas moléculas dos alimentos, resultando no seu aquecimento. Com relação a essas ondas, é correto afirmar:
+#
+{Se a velocidade das ondas no interior do forno é de 300.000 Km/s, elas tem comprimento de onda igual a 0,12m.|V}
+{As microondas tem a mesma natureza que o raio X.|V}
+{As microondas deixariam de se propagar no interior do forno se nele fosse feito vácuo.|F}
+{As microondas podem ser refletidas.|V}
+{O período destas ondas é da ordem de 1.000.000 s.|F}
+@
+
+# A respeito das ondas, é correto afirmar:
+#
+{As ondas transversais são aquelas em que a direção de propagação é perpendicular à direção de vibração.|V}
+{O som se propaga nos fluidos por meio de ondas longitudinais.|V}
+{O fenômeno que ocorre com as ondas na superfície da água, espalhando-se em todas as direções ao atravessarem uma pequena abertura feita num anteparo colocado na água, chama-se difração.|V}
+{A freqüência de uma onda numa corda é igual ao numero de oscilações por unidade de tempo de um ponto da corda.|V}
+{Uma onda transfere energia de um ponto a outra através do transporte da matéria do meio de propagação.|F}
+@
